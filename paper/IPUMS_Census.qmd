@@ -1,11 +1,14 @@
 ---
-title: "Week 4 Reflection Exercise"
+title: "US Doctorate Estimates"
 format: pdf
 editor: visual
-bibiliography: references.bib
+date: October 03 2024
+date-format: long
+number-sections: true
+bibliography: references.bib
 ---
 
-## Quarto
+## Introduction
 
 In this paper we explore the US 2022 Census Data, sourced from @ipums2024 We use @citeR, @readr, @dplyr, @xie2023knitr
 
@@ -23,6 +26,7 @@ The data is obtained from IPSUMS USA. Once on their website, navigate to Get Dat
 
 ```{r}
 #| echo: false
+#| message: false
 usa_census_data <- read_csv(here::here("data/usa_00003.csv"))
 colnames(usa_census_data)
 
@@ -42,6 +46,7 @@ The ratio estimator approach involves the ratio of two random variables (R = a_x
 
 ```{r}
 #| echo: false
+#| message: false
 # Step 2: Apply the ratio estimators approach
 # Total number of respondents in California (across all education levels)
 total_california_respondents <- 391171
@@ -65,3 +70,5 @@ knitr::kable(combined_data, caption = "Comparison of Actual and Estimated Total 
 ```
 
 Our estimated number of respondents were much higher than the actual number of respondents for most states that are not California. One reason could be that California's count of doctorates is much larger than most other states, which would inflate the correspondent estimator. If we had used another state for our estimator, one closer to the average number across all states, the estimator would get closer to the actual number.
+
+## References
