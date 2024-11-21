@@ -1,8 +1,11 @@
 ---
 title: "US Doctorate Estimates"
+author: 
+  - Veyasan Ragulan, Aman Rana
+thanks: "Code and data are available at: https://github.com/Veyasan1/US_Doctorates_Estimators.git"
 format: pdf
 editor: visual
-date: October 03 2024
+date: today
 date-format: long
 number-sections: true
 bibliography: references.bib
