@@ -14,4 +14,4 @@ The repo is structured as:
 
 ## Statement on LLM usage
 
-ChatGPT was used to generate all of the code seen below, with minor changes. The LLM.txt file holds the sequence of prompts.
+ChatGPT was used to generate all of the code seen in the qmd, with minor changes, as well as to edit the table caption. The LLM.txt file holds the sequence of prompts.
