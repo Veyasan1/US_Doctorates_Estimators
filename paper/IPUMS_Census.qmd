@@ -69,7 +69,7 @@ estimated_total <- doctorate_data %>%
 combined_data <- left_join(actual_total, estimated_total, by = "STATEICP")
 
 # View the results (estimated total respondents in each state based on the ratio)
-knitr::kable(combined_data, caption = "Comparison of Actual and Estimated Total Respondents in Each State Based on Doctoral Degree Ratio")
+knitr::kable(combined_data, caption = "State-level estimates of respondents with doctoral degrees, comparing actual and estimated totals. The data reveals that the estimated numbers, derived from California's doctoral degree ratio, are typically higher than the actual figures. This highlights the poor generalizability of California's doctoral degree ratio for accurately representing other states.")
 
 ```
 
